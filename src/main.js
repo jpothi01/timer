@@ -1,7 +1,7 @@
 import App from './App.svelte';
 
 if (navigator.wakeLock) {
-	navigator.wakeLock.request()
+	navigator.wakeLock.request('screen')
 }
 
 var app = new App({
