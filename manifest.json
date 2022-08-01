@@ -1,0 +1,17 @@
+{
+    "name": "NonStopWatch",
+    "short_name": "NonStopWatch",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#fafafa",
+    "theme_color": "#aa01fd",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/logo_72.png",
+            "type": "image/png",
+            "sizes": "72x72",
+            "purpose": "maskable"
+        }
+    ]
+}
