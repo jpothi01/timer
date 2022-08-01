@@ -13,7 +13,10 @@
    version="1.1"
    id="svg839"
    inkscape:version="1.0.2 (e86c8708, 2021-01-15)"
-   sodipodi:docname="logo.svg">
+   sodipodi:docname="logo.svg"
+   inkscape:export-filename="/Users/john/code/timer/logo_72.png"
+   inkscape:export-xdpi="18.288"
+   inkscape:export-ydpi="18.288">
   <defs
      id="defs833" />
   <sodipodi:namedview
@@ -23,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.94458437"
-     inkscape:cx="178.12816"
-     inkscape:cy="201.61182"
+     inkscape:zoom="0.150621"
+     inkscape:cx="-1178.0953"
+     inkscape:cy="-89.394921"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -52,19 +55,11 @@
      inkscape:groupmode="layer"
      id="layer1">
     <circle
-       style="fill:none;stroke:#aa01fd;stroke-width:3.833;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;stroke:#aa01fd;stroke-width:6;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path1438"
        cx="50.500065"
        cy="54.686092"
        r="39.37159" />
-    <path
-       style="fill:none;stroke:#aa01fd;stroke-width:4.58851;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 27.310105,28.989759 47.462613,49.609373 v 0"
-       id="path1442-5" />
-    <path
-       style="fill:none;stroke:#aa01fd;stroke-width:4.47858;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 72.87514,28.829955 28.593053,79.168692 v 0"
-       id="path1442-5-3" />
     <rect
        style="fill:#aa01fd;fill-opacity:1;stroke:#aa01fd;stroke-width:3.883;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect1535"
@@ -80,5 +75,21 @@
        x="69.943169"
        y="-37.330517"
        transform="rotate(39.353592)" />
+    <rect
+       style="fill:#aa01fd;fill-opacity:1;stroke:none;stroke-width:7.89938;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1557"
+       width="60.085819"
+       height="8.0114422"
+       x="-39.842426"
+       y="70.667183"
+       transform="rotate(-50.735621)" />
+    <rect
+       style="fill:#aa01fd;fill-opacity:1;stroke:none;stroke-width:7.89938;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1557-6"
+       width="60.085819"
+       height="8.0114422"
+       x="-104.46798"
+       y="-4.7495742"
+       transform="rotate(-133.26031)" />
   </g>
 </svg>
