@@ -41,6 +41,7 @@
 			<div class="past-time">{formatTime(p)}</div>
 		{/each}
 	</div>
+	<footer>Copyright © Earnest Bits LLC, 2022</footer>
 </div>
 
 <style>
@@ -50,6 +51,8 @@
 		justify-content: center;
 		flex-direction: column;
 		gap: 16px;
+		height: 100vh;
+		box-sizing: border-box;
 	}
 
 	.timer-display {
@@ -66,5 +69,14 @@
 		flex-direction: column;
 		gap: 8px;
 		font-size: 16px;
+		flex-grow: 1;
+	}
+
+	footer {
+		display: flex;
+		justify-content: center;
+		color: #ccc;
+		font-size: 12px;
+		line-height: 32px;
 	}
 </style>
