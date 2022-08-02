@@ -14,21 +14,21 @@
    id="svg839"
    inkscape:version="1.0.2 (e86c8708, 2021-01-15)"
    sodipodi:docname="logo.svg"
-   inkscape:export-filename="/Users/john/code/timer/logo_72.png"
-   inkscape:export-xdpi="18.288"
-   inkscape:export-ydpi="18.288">
+   inkscape:export-filename="/Users/john/code/timer/docs/logo_167.png"
+   inkscape:export-xdpi="42.419998"
+   inkscape:export-ydpi="42.419998">
   <defs
      id="defs833" />
   <sodipodi:namedview
      id="base"
-     pagecolor="#ffffff"
+     pagecolor="#d4f5fc"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0.0"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.0718727"
-     inkscape:cx="158.49825"
-     inkscape:cy="150.26645"
+     inkscape:zoom="0.69127231"
+     inkscape:cx="68.835501"
+     inkscape:cy="211.31161"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -58,7 +58,7 @@
        style="fill:none;stroke:#7f01fd;stroke-width:7;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path1438"
        cx="50.500065"
-       cy="54.686092"
+       cy="53.191742"
        r="39.37159" />
     <rect
        style="fill:#7f01fd;fill-opacity:1;stroke:#7f01fd;stroke-width:3.883;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -66,30 +66,30 @@
        width="10.545999"
        height="5.6786146"
        x="44.946007"
-       y="7.2337384" />
+       y="5.7393875" />
     <rect
        style="fill:#7f01fd;fill-opacity:1;stroke:#7f01fd;stroke-width:3.883;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect1535-1"
        width="10.545999"
        height="5.6786146"
-       x="69.943169"
-       y="-37.330517"
+       x="68.995598"
+       y="-38.486019"
        transform="rotate(39.353592)" />
     <rect
        style="fill:#7f01fd;fill-opacity:1;stroke:none;stroke-width:7.899;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect1557"
        width="60.085819"
        height="8.0114422"
-       x="-37.269897"
-       y="70.673874"
+       x="-36.504482"
+       y="69.543091"
        transform="rotate(-48.851974)" />
     <rect
        style="fill:#7f01fd;fill-opacity:1;stroke:none;stroke-width:7.89938;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect1557-6"
        width="60.085819"
        height="8.0114422"
-       x="-104.46798"
-       y="-4.7495742"
+       x="-103.37972"
+       y="-3.7254744"
        transform="rotate(-133.26031)" />
   </g>
 </svg>
