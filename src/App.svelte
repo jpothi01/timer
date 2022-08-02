@@ -1,4 +1,35 @@
 <script>
+	import NoSleep from "nosleep.js";
+
+	let noSleep;
+	let wakeLock;
+
+	function enableNoSleep() {
+		if (noSleep) {
+			return;
+		}
+
+		noSleep = new NoSleep();
+		noSleep.enable();
+	}
+
+	function enableWakeLock() {
+		if (wakeLock) {
+			return;
+		}
+
+		if (navigator.wakeLock) {
+			navigator.wakeLock
+				.request("screen")
+				.then((lock) => {
+					wakeLock = lock;
+				})
+				.catch(() => enableNoSleep());
+		} else {
+			enableNoSleep();
+		}
+	}
+
 	let baseTime = new Date();
 	let currentTime = new Date();
 	$: shownTime = new Date(currentTime - baseTime);
@@ -25,6 +56,8 @@
 	}
 
 	function reset() {
+		enableWakeLock();
+
 		pastTimes.push(shownTime);
 		pastTimes = pastTimes;
 		baseTime = new Date();
