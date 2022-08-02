@@ -32,8 +32,8 @@
 	}
 </script>
 
-<div class="container">
-	<div class="timer-display" on:click={reset}>
+<div class="container" on:click={reset}>
+	<div class="timer-display">
 		{formatTime(shownTime)}
 	</div>
 	<div class="past-times">
