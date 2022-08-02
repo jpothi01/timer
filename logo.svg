@@ -26,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.150621"
-     inkscape:cx="-1178.0953"
-     inkscape:cy="-89.394921"
+     inkscape:zoom="1.0718727"
+     inkscape:cx="158.49825"
+     inkscape:cy="150.26645"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -55,20 +55,20 @@
      inkscape:groupmode="layer"
      id="layer1">
     <circle
-       style="fill:none;stroke:#aa01fd;stroke-width:6;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;stroke:#7f01fd;stroke-width:7;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path1438"
        cx="50.500065"
        cy="54.686092"
        r="39.37159" />
     <rect
-       style="fill:#aa01fd;fill-opacity:1;stroke:#aa01fd;stroke-width:3.883;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#7f01fd;fill-opacity:1;stroke:#7f01fd;stroke-width:3.883;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect1535"
        width="10.545999"
        height="5.6786146"
        x="44.946007"
        y="7.2337384" />
     <rect
-       style="fill:#aa01fd;fill-opacity:1;stroke:#aa01fd;stroke-width:3.883;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#7f01fd;fill-opacity:1;stroke:#7f01fd;stroke-width:3.883;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect1535-1"
        width="10.545999"
        height="5.6786146"
@@ -76,15 +76,15 @@
        y="-37.330517"
        transform="rotate(39.353592)" />
     <rect
-       style="fill:#aa01fd;fill-opacity:1;stroke:none;stroke-width:7.89938;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#7f01fd;fill-opacity:1;stroke:none;stroke-width:7.899;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect1557"
        width="60.085819"
        height="8.0114422"
-       x="-39.842426"
-       y="70.667183"
-       transform="rotate(-50.735621)" />
+       x="-37.269897"
+       y="70.673874"
+       transform="rotate(-48.851974)" />
     <rect
-       style="fill:#aa01fd;fill-opacity:1;stroke:none;stroke-width:7.89938;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#7f01fd;fill-opacity:1;stroke:none;stroke-width:7.89938;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect1557-6"
        width="60.085819"
        height="8.0114422"

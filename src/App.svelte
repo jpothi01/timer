@@ -46,30 +46,35 @@
 
 <style>
 	.container {
-		display: flex;
-		align-items: center;
+		display: grid;
 		justify-content: center;
-		flex-direction: column;
-		gap: 16px;
-		height: 100vh;
+		align-items: center;
+		grid-template-rows: 256px calc(100% - 256px - 32px) 32px;
+		height: 100%;
 		box-sizing: border-box;
 	}
 
 	.timer-display {
-		height: 128px;
+		display: flex;
+		align-items: center;
 		font-size: 128px;
-		padding-top: 64px;
-		padding-bottom: 64px;
+		padding-top: 32px;
+		padding-bottom: 32px;
+		box-sizing: border-box;
 		cursor: pointer;
 		width: 340px;
 	}
 
 	.past-times {
+		align-self: flex-start;
 		display: flex;
+		justify-content: flex-start;
+		align-items: center;
 		flex-direction: column;
+		overflow: scroll;
 		gap: 8px;
 		font-size: 16px;
-		flex-grow: 1;
+		max-height: 100%;
 	}
 
 	footer {
