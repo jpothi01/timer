@@ -30,6 +30,7 @@
 		}
 	}
 
+	const openTime = new Date();
 	let baseTime = new Date();
 	let currentTime = new Date();
 	$: shownTime = new Date(currentTime - baseTime);
@@ -41,9 +42,13 @@
 		return temp;
 	})();
 
+	$: totalTime = new Date(currentTime - openTime);
+	$: sumPastTime = new Date(pastTimes.reduce((p, c) => p + c.valueOf(), 0));
+	let showSumTime = false;
+
 	setInterval(() => {
 		currentTime = new Date();
-	}, 1);
+	}, 0.01);
 
 	function formatNumber(n) {
 		return n.toString().padStart(2, "0");
@@ -63,16 +68,23 @@
 		baseTime = new Date();
 		currentTime = baseTime;
 	}
+
+	function toggleTotalView() {
+		showSumTime = !showSumTime;
+	}
 </script>
 
-<div class="container" on:click={reset}>
-	<div class="timer-display">
+<div class="container">
+	<div class="timer-display" on:click={reset}>
 		{formatTime(shownTime)}
 	</div>
-	<div class="past-times">
+	<div class="past-times" on:click={reset}>
 		{#each reversedPastTimes as p}
 			<div class="past-time">{formatTime(p)}</div>
 		{/each}
+	</div>
+	<div class="total-display" on:click={toggleTotalView}>
+		{showSumTime ? formatTime(sumPastTime) : formatTime(totalTime)}
 	</div>
 	<footer>Copyright © Earnest Bits LLC, 2022</footer>
 </div>
@@ -82,7 +94,7 @@
 		display: grid;
 		justify-content: center;
 		align-items: center;
-		grid-template-rows: 256px calc(100% - 256px - 32px) 32px;
+		grid-template-rows: 256px calc(100% - 256px - 24px - 64px) 64px 24px;
 		height: 100%;
 		box-sizing: border-box;
 	}
@@ -91,8 +103,6 @@
 		display: flex;
 		align-items: center;
 		font-size: 128px;
-		padding-top: 32px;
-		padding-bottom: 32px;
 		box-sizing: border-box;
 		cursor: pointer;
 		width: 340px;
@@ -107,14 +117,26 @@
 		overflow: scroll;
 		gap: 8px;
 		font-size: 16px;
-		max-height: 100%;
+		height: 100%;
+	}
+
+	.total-display {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		color: #aaa;
+		font-size: 24px;
+		cursor: pointer;
 	}
 
 	footer {
 		display: flex;
-		justify-content: center;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
 		color: #ccc;
 		font-size: 12px;
-		line-height: 32px;
+		height: 100%;
 	}
 </style>
