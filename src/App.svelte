@@ -1,15 +1,16 @@
 <script>
-	import NoSleep from "nosleep.js";
+	let wakeLock;
 
-	let noSleep;
-
-	function enableNoSleep() {
-		if (noSleep) {
-			noSleep.disable();
+	async function enableWakeLock() {
+		if (wakeLock || !navigator.wakeLock) {
+			return;
 		}
 
-		noSleep = new NoSleep();
-		noSleep.enable();
+		try {
+			wakeLock = await wakeLock.request("screen");
+		} catch (e) {
+			console.error("Could not get wake lock: ", e);
+		}
 	}
 
 	const openTime = new Date();
@@ -43,8 +44,6 @@
 	}
 
 	function reset() {
-		enableNoSleep();
-
 		pastTimes.push(shownTime);
 		pastTimes = pastTimes;
 		baseTime = new Date();
@@ -54,6 +53,8 @@
 	function toggleTotalView() {
 		showSumTime = !showSumTime;
 	}
+
+	enableWakeLock();
 </script>
 
 <div class="container">
