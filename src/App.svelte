@@ -2,32 +2,14 @@
 	import NoSleep from "nosleep.js";
 
 	let noSleep;
-	let wakeLock;
 
 	function enableNoSleep() {
 		if (noSleep) {
-			return;
+			noSleep.disable();
 		}
 
 		noSleep = new NoSleep();
 		noSleep.enable();
-	}
-
-	function enableWakeLock() {
-		if (wakeLock) {
-			return;
-		}
-
-		if (navigator.wakeLock) {
-			navigator.wakeLock
-				.request("screen")
-				.then((lock) => {
-					wakeLock = lock;
-				})
-				.catch(() => enableNoSleep());
-		} else {
-			enableNoSleep();
-		}
 	}
 
 	const openTime = new Date();
@@ -61,7 +43,7 @@
 	}
 
 	function reset() {
-		enableWakeLock();
+		enableNoSleep();
 
 		pastTimes.push(shownTime);
 		pastTimes = pastTimes;
